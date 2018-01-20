@@ -1,0 +1,76 @@
+@import 'variables';
+@import 'mixins';
+
+input, select, textarea {
+  @include font-regular;
+  outline: none;
+  border: 1px solid $color-grey;
+  transition: 0.3s all ease;
+}
+input, select {
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0 0.5rem;
+  border-radius: 3px;
+
+  &:focus {
+    border-color: lighten($color-orange, 5%);
+  }
+  &.is-invalid {
+    border: 1px solid $color-red;
+  }
+}
+textarea {
+  line-height: 1.5rem;
+  width: 100%;
+  border-radius: 3px;
+}
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+  background-color: lighten($color-orange, 15%) !important;
+}
+
+.form-item {
+  margin-bottom: 1rem;
+
+  &>input, &>select {
+    width: 100%;
+  }
+}
+
+.form-controls {
+  margin-top: 1.5rem;
+}
+
+.is-huge {
+  .form-item {
+    margin-bottom: 1.5rem;
+
+    &>input, &>select {
+      height: 60px;
+      padding: 16px;
+      font-size: 26px;
+      border-radius: 4px;
+    }
+  }
+
+  .form-controls {
+    margin-top: 2rem;
+  }
+}
+
+.is-big {
+  .form-item {
+    margin-bottom: 1.5rem;
+
+    &>input, &>select {
+      height: 48px;
+      padding: 16px;
+      font-size: 20px;
+      border-radius: 4px;
+    }
+  }
+
+  .form-controls {
+    margin-top: 2rem;
+  }
+}

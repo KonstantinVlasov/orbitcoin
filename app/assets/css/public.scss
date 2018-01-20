@@ -1,0 +1,78 @@
+@import '~normalize.css';
+
+@import 'animations';
+@import 'variables';
+@import 'mixins';
+
+@import 'forms';
+@import 'tables';
+@import 'typography';
+
+@import 'components/badge';
+@import 'components/button';
+@import 'components/checkbox';
+@import 'components/list';
+@import 'components/panel';
+@import 'components/radio';
+@import 'components/switch';
+@import 'components/tag';
+@import 'components/tooltip';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  @include font-regular;
+  color: $color-font;
+  line-height: 1.5;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box
+}
+
+a {
+  color: $color-blue;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.app {
+  position: absolute;
+  top: $menu-height;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+/**
+ * Custom scrollbars
+ */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.09);
+  background-clip: padding-box;
+  border: 3px solid transparent;
+  border-right-width: 2px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.19);
+  }
+}
+
+.page-enter-active, .page-leave-active {
+  transition: 0.4s opacity ease;
+}
+.page-enter, .page-leave-to {
+  opacity: 0;
+}
