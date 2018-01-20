@@ -30,7 +30,7 @@
         right: -$radius;
         bottom: -$radius;
         border-radius: 50%;
-        border: 2px solid white;
+        border: 2px solid rgba(255,255,255,0.4);
       }
       &:after {
         content: '';
