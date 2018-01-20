@@ -1,7 +1,11 @@
 'use strict'
 
-export default ({ store, redirect }) => {
-  // if (!store.state.auth.loggedIn) {
-  //   redirect('/login')
-  // }
+export default ({ store, redirect, route }) => {
+  if (route.fullPath.startsWith('/app')) {
+    if (!store.state.auth.loggedIn) {
+      redirect('/app/login')
+    }
+  } else {
+    redirect('/')
+  }
 }

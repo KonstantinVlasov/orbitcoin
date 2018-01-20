@@ -54,7 +54,6 @@
 
 <style lang="scss">
   @import '../../assets/css/variables';
-  @import '../../assets/css/breakpoints';
 
   .login-page {
     min-height: 100vh;
