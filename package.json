@@ -3,7 +3,7 @@
   "version": "0.0.3",
   "description": "Frontend for Orbitcoin App",
   "scripts": {
-    "pull": "git pull && npm install",
+    "pull": "git pull && sudo npm install",
     "deploy": "truffle deploy",
     "lint": "eslint ./",
     "build": "webpack",
