@@ -9,7 +9,7 @@
   color: white;
   background-color: darken($color-orange, 1%);
   border: 1px solid darken($color-orange, 1%);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   border-radius: 3px;
   cursor: pointer;
@@ -32,7 +32,7 @@
     height: 36px;
     line-height: 34px;
     padding: 0 1rem;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   &.is-tiny {

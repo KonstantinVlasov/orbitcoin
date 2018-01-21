@@ -3,6 +3,7 @@
     .content
       app-logo.is-loading
       h1 Orbitcoin
+      p.subtitle Orbit Credit Network
       form.login.panel.is-elevation-18(v-on:submit.prevent="submit('login')")
         .title Login
 
@@ -92,11 +93,13 @@
     }
 
     h1 {
-      margin-top: 0;
+      margin : 0 0 0.25rem;
       font-size: 2rem;
       font-weight: 300;
       color: white;
       line-height: 1;
+      text-align: center;
+      text-shadow: 0 1px 2px black;
     }
 
     .login {
@@ -109,6 +112,12 @@
     .title {
       font-size: 1.5rem;
       margin-bottom: 2rem;
+    }
+    .subtitle {
+      text-align: center;
+      color: white;
+      margin: 0.25rem 0 1rem;
+      text-shadow: 0 1px 2px black;
     }
   }
 </style>
