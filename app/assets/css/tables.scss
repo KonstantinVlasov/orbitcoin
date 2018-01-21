@@ -7,6 +7,7 @@ table {
     text-align: left;
     height: 2.5rem;
     line-height: 2.5rem;
+    padding: 0 1rem;
     font-size: 0.75rem;
     font-weight: 400;
     text-transform: uppercase;
@@ -17,7 +18,16 @@ table {
   td {
     height: 3rem;
     line-height: 3rem;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0 1rem;
+    cursor: pointer;
+  }
+
+  tr:hover {
+    background-color: rgba(0,0,0,0.04)
+  }
+
+  tr:nth-child(odd) td {
+    background-color: rgba(0,0,0,0.02);
   }
 
   tr:last-child td {

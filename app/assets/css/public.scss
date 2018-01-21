@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 @import '~normalize.css';
 
 @import 'animations';
@@ -32,7 +34,7 @@ body {
 }
 
 a {
-  color: $color-blue;
+  color: darken($color-orange, 5%);
   text-decoration: none;
   cursor: pointer;
 

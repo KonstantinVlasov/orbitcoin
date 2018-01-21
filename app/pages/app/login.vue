@@ -41,7 +41,7 @@
           this.login()
             .then(() => {
               this.isSubmitting = false
-              this.$router.push('/')
+              this.$router.push('/app')
             })
             .catch(() => {
               this.isSubmitting = false
@@ -61,7 +61,31 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 4rem;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      background: url(/static/images/universe.jpeg), radial-gradient(#261d66, #040613);
+      background-size: cover;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      background-image: radial-gradient(#333c46, black);
+      opacity: 0.55;
+    }
 
     .app-logo {
       margin: 0 auto;

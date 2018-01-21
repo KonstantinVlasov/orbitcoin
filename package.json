@@ -57,6 +57,7 @@
     "pug": "^2.0.0-rc.4",
     "sass-loader": "^6.0.6",
     "sha3": "^1.2.0",
-    "svg-inline-loader": "^0.8.0"
+    "svg-inline-loader": "^0.8.0",
+    "vue-lazyload": "^1.1.4"
   }
 }

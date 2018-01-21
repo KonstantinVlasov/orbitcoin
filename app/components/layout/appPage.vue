@@ -17,7 +17,7 @@
   .app-page {
     background-color: #f5f5f5;
     position: absolute;
-    top: 0;
+    top: 4rem;
     left: $sidebar-width;
     right: 0;
     bottom: 0;
@@ -56,17 +56,9 @@
     }
     .app-page-subtitle {
       max-width: 50rem;
-      padding: 0 1rem;
-      margin-left: auto;
-      margin-right: auto;
       color: $color-font;
-      text-align: center;
-      font-size: 20px;
-
-      &.is-small {
-        font-size: 1rem;
-        margin: 0 auto;
-      }
+      font-size: 16px;
+      font-weight: 400;
     }
     .app-page-section {
       padding: 2.5rem 1rem;

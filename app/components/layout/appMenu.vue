@@ -2,8 +2,9 @@
   .app-menu
     router-link.item(to="/app") Deals
     router-link.item(to="/app/loans") Loans
-    router-link.item(to="/app/invests") Invests
-    router-link.item(to="/app/profile") Profile
+    router-link.item(to="/app/market") Market
+    router-link.item(to="/app/finances") Finances
+    router-link.item(to="/app/documents") Documents
     router-link.item(to="/app/about") About
 </template>
 
