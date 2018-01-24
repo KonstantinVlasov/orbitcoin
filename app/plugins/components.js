@@ -10,6 +10,7 @@ import appPage from '../components/layout/appPage.vue'
 import appSidebar from '../components/layout/appSidebar.vue'
 
 import appLogo from '../components/appLogo.vue'
+import appTablePreview from '../components/appTablePreview.vue'
 
 Vue.use(VueLazyload)
 Vue.use(appModal)
@@ -20,3 +21,4 @@ Vue.component('app-page', appPage)
 Vue.component('app-sidebar', appSidebar)
 
 Vue.component('app-logo', appLogo)
+Vue.component('app-table-preview', appTablePreview)

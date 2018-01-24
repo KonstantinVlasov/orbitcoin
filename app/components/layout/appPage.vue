@@ -15,7 +15,7 @@
   @import '../../assets/css/breakpoints';
 
   .app-page {
-    background-color: #f5f5f5;
+    //background-color: #f5f5f5;
     position: absolute;
     top: 4rem;
     left: $sidebar-width;
@@ -37,7 +37,11 @@
       bottom: 0;
       padding: 2rem;
       overflow-y: auto;
-      background-color: #f4f5f7;
+      /*background-color: #f4f5f7;*/
+      /*background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);*/
+      /*background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);*/
+      /*background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);*/
+      /*background-image: linear-gradient(0deg, #eff1f4 0%, #c3cfe2 100%);*/
     }
 
     .app-page-title {

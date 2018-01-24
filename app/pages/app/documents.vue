@@ -37,7 +37,7 @@
         display: inline-block;
         padding-left: 30px;
         line-height: 30px;
-        background: url(https://png.icons8.com/material/fbaa51/document.png) 0 3px no-repeat;
+        background: url(https://png.icons8.com/material/f07b20/document.png) 0 3px no-repeat;
       }
     }
   }

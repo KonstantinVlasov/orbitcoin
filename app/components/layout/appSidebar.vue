@@ -40,7 +40,7 @@
       width: 100%;
       height: 100%;
       pointer-events: none;
-      background: url(/static/images/universe.jpeg), radial-gradient(#261d66, #040613);
+      background: url(/static/images/universe.jpeg) 50% 50%, radial-gradient(#261d66, #040613);
       background-size: cover;
     }
     &:after {

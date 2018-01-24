@@ -1,6 +1,7 @@
 <template lang="pug">
   .app-menu
-    router-link.item(to="/app") Deals
+    router-link.item(to="/app") Dashboard
+    router-link.item(to="/app/deals") Deals
     router-link.item(to="/app/loans") Loans
     router-link.item(to="/app/market") Market
     router-link.item(to="/app/finances") Finances

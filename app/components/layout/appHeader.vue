@@ -4,11 +4,11 @@
 
     .actions
       .item
-        img.notification(src="https://png.icons8.com/material/fbaa51/appointment-reminders.png")
+        img.notification(src="https://png.icons8.com/material/f07b20/appointment-reminders.png")
       .item
-        img.comments(src="https://png.icons8.com/material/fbaa51/comments.png")
+        img.comments(src="https://png.icons8.com/material/f07b20/comments.png")
       .item
-        img.comments(src="https://png.icons8.com/material/fbaa51/user-male.png")
+        img.comments(src="https://png.icons8.com/material/f07b20/user-male.png")
 </template>
 
 <script>

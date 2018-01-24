@@ -1,5 +1,5 @@
 .panel {
-  padding: 1.5rem;
+  padding: 1rem 1.5rem;
   background: white;
   box-shadow: 0 6px 15px rgba(36,37,38,0.1);
   border-radius: 3px;
@@ -16,12 +16,34 @@
     padding: 0;
 
     .panel-title {
-      padding: 1.5rem 1.5rem 0;
+      padding: 1rem 1.5rem 0;
+    }
+
+    .panel-content {
+      padding: 1rem 1.5rem;
+    }
+  }
+
+  &.is-widget {
+    width: 320px;
+    height: 274px;
+  }
+
+  &.is-action {
+    transition: 0.3s all ease;
+    cursor: pointer;
+    &:hover {
+      //background-color: rgba(0,0,0,0.01);
+      box-shadow: 0 12px 21px rgba(36,37,38,0.25);
     }
   }
 
   .panel-title {
     font-size: 18px;
     margin: 0 0 1rem;
+  }
+
+  .panel-content {
+
   }
 }
