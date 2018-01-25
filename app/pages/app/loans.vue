@@ -1,8 +1,13 @@
 <template lang="pug">
   .loans-page
-    h1.app-page-title Loans &nbsp;
-      .button.is-tiny(v-on:click="createLoan") Create loan
-      .app-page-subtitle My available loans
+    .row.is-bottom
+      .column
+        h1.app-page-title Loans &nbsp;
+          .app-page-subtitle My available loans
+      .column.is-fixed
+        .actions
+          .button.is-tiny(v-on:click="") Create loan
+
     .panel.is-clean
       table
         thead

@@ -1,3 +1,4 @@
+@import "variables.scss";
 
 table {
   width: 100%;
@@ -16,14 +17,21 @@ table {
   }
 
   td {
-    height: 3rem;
-    line-height: 3rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
     padding: 0 1rem;
+    font-size: 14px;
     cursor: pointer;
+    &:first-child {
+      border-left: 3px solid transparent;
+    }
   }
 
-  tr:hover {
-    background-color: rgba(0,0,0,0.04)
+  tbody > tr:hover {
+    background-color: rgba(0,0,0,0.04);
+    td:first-child {
+      border-left: 3px solid $color-orange;
+    }
   }
 
   tr:nth-child(odd) td {
@@ -31,6 +39,6 @@ table {
   }
 
   tr:last-child td {
-    border: none;
+    border-bottom: none;
   }
 }

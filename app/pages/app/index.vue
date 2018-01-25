@@ -7,23 +7,22 @@
       .column
         .panel.is-widget
           h2.panel-title Balance &nbsp;
-          .finances-widget.is-balance
-            .finances-amount
-              img(src="https://png.icons8.com/color/28/bitcoin.png")
-              | 8.34 BTC
-            .finances-amount
-              img(src="https://png.icons8.com/color/28/ethereum.png")
-              | 194 ETH
-            .finances-amount
-              img(src="https://png.icons8.com/color/28/us-dollar.png")
-              | $24000
+          .finances-amount
+            img(src="https://png.icons8.com/color/28/bitcoin.png")
+            | 8.34 BTC
+          .finances-amount
+            img(src="https://png.icons8.com/color/28/ethereum.png")
+            | 194 ETH
+          .finances-amount
+            img(src="https://png.icons8.com/color/28/us-dollar.png")
+            | $24000
           .button.is-tiny Purchase
           | &nbsp;
           .button.is-tiny.is-white Withdraw
-      .column
+      .column.is-widget
         .panel.is-clean.is-widget
           .finances-widget.is-btc
-      .column
+      .column.is-widget
         .panel.is-clean.is-widget
           .finances-widget.is-eth
     .row
@@ -169,8 +168,6 @@
     },
     mounted () {
       const baseUrl = "https://widgets.cryptocompare.com/";
-      var scripts = document.getElementsByTagName("script");
-      var embedder = scripts[ scripts.length - 1 ];
       window.cccTheme = {"General":{"borderWidth":"0","borderColor":"#fff","borderRadius":"0"},"Header":{"background":"white","displayFollowers":false},"Followers":{"background":"transparent","color":"#3d9400","borderColor":"transparent"},"Chart":{"fillColor":"#ffcaa0","borderColor":"#f07b20"},"Trend":{"colorUnchanged":"#f07b20"}};
 
       var appName = encodeURIComponent(window.location.hostname);
@@ -180,7 +177,6 @@
       s.async = true;
       var theUrl = baseUrl+'serve/v2/coin/chart?fsym=ETH&tsym=USD&period=3M';
       s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
-      //embedder.parentNode.appendChild(s);
       this.$el.querySelector('.finances-widget.is-eth').appendChild(s)
 
       s = document.createElement("script");
@@ -208,7 +204,7 @@
   @import '../../assets/css/breakpoints';
 
   .finances-amount {
-    //display: inline-block;
+    font-family: $font-text;
     height: 28px;
     line-height: 28px;
     font-size: 1.25rem;
@@ -222,21 +218,21 @@
     }
   }
 
-  .row {
-    margin: 0 -1rem;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    .column {
-      margin: 0 1rem;
-      order: 1;
-      flex: 1 auto;
-    }
-  }
-
   .finances-widget {
+    font-family: $font-text;
     vertical-align: top;
     display: inline-block;
     width: 320px;
+    height: 274px;
+  }
+
+  .column.is-widget {
+    width: 320px;
+    flex: 0 0 320px;
+  }
+
+  .panel.is-widget {
+    height: 274px;
+    overflow: hidden;
   }
 </style>

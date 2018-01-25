@@ -1,9 +1,11 @@
+@import "variables";
+
 /**
  * Fonts
  */
 
 @mixin font-family {
-  font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'San Francisco', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Segoe UI', 'Fira Sans', Roboto, Oxygen, Ubuntu, 'Droid Sans', 'Arial', sans-serif;
+  font-family: $font-main;
 }
 @mixin font-regular {
   @include font-family;

@@ -1,7 +1,13 @@
 <template lang="pug">
   .market-page
-    h1.app-page-title Market
-      .app-page-subtitle List of actual applications
+    .row.is-bottom
+      .column
+        h1.app-page-title Market
+          .app-page-subtitle List of actual applications
+      .column.is-fixed
+        .actions
+          .button.is-tiny Create proposal
+
     .panel.is-clean
       table
         thead

@@ -1,4 +1,15 @@
 module.exports = {
+  head: {
+    title: 'Orbitcoin',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'format-detection', content: 'telephone=no' },
+      { name: 'robots', content: 'noodp' },
+      { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge, chrome=1' },
+      { name: 'description', hid: 'description', content: 'Orbit Credit Network' }
+    ]
+  },
   srcDir: 'app',
   plugins: [
     '~plugins/components'

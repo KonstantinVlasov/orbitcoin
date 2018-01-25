@@ -1,0 +1,20 @@
+.row {
+  margin: 0 -1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+
+  &.is-bottom {
+    align-items: flex-end;
+  }
+
+  .column {
+    margin: 0 1rem;
+    order: 1;
+    flex: 1 auto;
+
+    &.is-fixed {
+      flex: 0 0;
+    }
+  }
+}

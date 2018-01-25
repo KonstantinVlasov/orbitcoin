@@ -57,6 +57,10 @@
         font-size: 2rem;
         color: $color-font-dark;
       }
+
+      .actions {
+        float: right;
+      }
     }
     .app-page-subtitle {
       max-width: 50rem;
